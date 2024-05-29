@@ -1,0 +1,528 @@
+body {
+    font-family: URW Gothic L, sans-serif;
+    text-align: justify;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    border-radius: 10%;
+    position: absolute;
+    left: 20px;
+}
+
+#recherche {
+    border-radius: 10%;
+    position: absolute;
+    right: 20px;
+}
+
+#tools {
+    background-color: #0a7f79;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 25px;
+    padding: 15px 10px;
+}
+
+#tools img {
+    height: 30px;
+    width: 30px;
+    padding-inline: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tools a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.tool_item label {
+    color: white;
+    font-weight: bold;
+}
+#modif {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#modif h2 {
+    margin: 0;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+
+#modif button {
+    padding: 10px 20px;
+    margin-right: 10%;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0a7f79;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#modif button:hover {
+    background-color: #096560;
+  }
+
+#Macros {
+    margin-left: 15%;
+}
+
+#id_nutriments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.nutriments {
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+}
+
+#blue {
+    color: #096560;
+    font-weight: bold;
+}
+
+#purple {
+    color: #4a0065;
+    font-weight: bold;
+}
+
+#orange {
+    color: #b76000;
+    font-weight: bold;
+}
+
+#sport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sport {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+#modificationForm {
+    display: none;
+}
+
+#cases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cases {
+    width: 33%;
+    padding: 0px;
+    text-align: center;
+}
+
+#modificationForm {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+#soumettre {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0a7f79;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 15%;
+    display: none;
+    margin : auto;
+}
+
+#soumettre:hover {
+    background-color: #096560;
+}
+
+.bouton_green {
+    padding: 10px 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    background-color: #0a7f79;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bouton_green:hover {
+    background-color: #096560;
+  }
+
+.encadre_question {
+    background-color: #E9F4F9;
+    border: none;
+    padding: 30px;
+    margin: 15px;
+}
+
+.container_quiz {
+    display: flex;
+    align-items: center; 
+    gap: 10%;
+}
+
+.vrai {
+    background-color: #21828E;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border : 2px solid #096560;;
+    border-radius: 2px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.vrai:hover {
+    background-color: #096560;
+}
+
+.faux {
+    background-color: #E9F4F9;
+    color: #096560;
+    padding: 10px 20px;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    border : 2px solid;
+    border-color: #096560;
+    border-radius: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.faux:hover {
+    color: #57928f;
+    border-color: #57928f;
+}
+
+.container_verifier {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#verifier {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0a7f79;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#verifier:hover {
+    background-color: #096560;
+}
+
+#nouveauGlucides {
+    width: 33%;
+    text-align: center;
+}
+
+#nouveauLipides {
+    width: 33%;
+    text-align: center;
+}
+
+#nouveauProteines {
+    width: 33%;
+    text-align: center;
+}
+
+#header_connexion {
+    background-image: url("../img/Assiette_Connexion.png");
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: center;
+    background-size: 100% auto;
+    margin-bottom: 5%;
+}
+
+#logo_connexion {
+    border-radius: 10%;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+#info_connexion {
+    text-align: center;
+}
+
+.champ {
+    background-color: #c3f2cb;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 33px;
+    margin-top: 10px;
+}
+
+#borderless {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#input1 {
+    margin-bottom: 2%;
+}
+
+#borderless label {
+    margin-left: 15%;
+}
+
+#mdp {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.mdp2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#retenirMdp {
+    text-align: center;
+}
+
+#bouton_connexion {
+    display: flex;
+    align-items: center; 
+}
+
+.mdp3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mdp3 p, .mdp3 a {
+    display: flex;
+    align-items: center; 
+}
+
+.mdp3 a {
+    color: #0a7f79;
+}
+
+#inscription fieldset {
+    background-color: rgb(240, 240, 240);
+}
+
+.inscription_input {
+    background-color: #c3f2cb;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.choix_plat {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    column-gap: 10%;    
+}
+
+#plat {
+    width: 60%;
+}
+
+.bg_plat {
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#plat_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#modificationForm {
+    display: none;
+}
+
+.chart-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 100%;
+    align-items: center;
+    margin-left: 16%;
+}
+
+#chat-box {
+    width: auto;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    background-color: rgb(235, 235, 235);
+    overflow-y: scroll;
+}
+
+#user-input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(235, 235, 235);
+}
+
+.user{
+    text-align: right;
+    background-color: #096560;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.bot {
+    text-align: left;
+    background-color: #57928f;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.styled-message {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #E9F4F9;
+    color: black;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+#platimg>a:hover {
+    transform: rotateY(180deg);
+   
+}
+
+
+
+#platimg {
+    backface-visibility: hidden;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+
+
+#plattext {
+    background-color: rgb(11, 3, 37);
+    color: white;
+    width: 100%;
+    height: 200%;
+    transform: rotateY(180deg);
+    border-radius: 5%;
+    border-style: dotted;
+    border-color: aliceblue;
+}
