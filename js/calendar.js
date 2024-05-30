@@ -14,7 +14,7 @@ function afficherCarnivore() {
 
 function afficherPlats(categorie) {
     // Obtenez tous les plats
-    const plats = document.querySelectorAll('.bg_plat');
+    const plats = document.querySelectorAll('.card-container');
 
     // Parcourez tous les plats
     plats.forEach(plat => {
@@ -29,7 +29,7 @@ function afficherPlats(categorie) {
 
 // Optionnel : pour afficher tous les plats au chargement de la page
 function afficherTous() {
-    const plats = document.querySelectorAll('.bg_plat');
+    const plats = document.querySelectorAll('.card-container');
     plats.forEach(plat => {
         plat.style.display = 'block';
     });

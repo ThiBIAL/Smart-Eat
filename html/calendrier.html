@@ -44,40 +44,52 @@
         <h2>Liste des repas</h2>
     </div>
     <section id="plat_container">
-        <div class="bg_plat vegan">
-            <div class="choix_plat" id = "platimg">
-                <a href="https://menu-vegetarien.com/salade-lupins-haricots-verts/" class="choix_plat"><img id="plat" src="../img/Plat/Salade_Vegan.png" alt="Salade de lupins et haricots verts"></a>
-            </div>
-            <div class="choix_plat" id = "plattext">
-                <h3>Salade de lupins et haricots verts</h3>
-                <p>Calories : 185kcal</p>
-            </div>
-            <div class="choix_plat">
-                <button class="bouton_green">Ajouter au calendrier</button>
-            </div>
-        </div>
-        <div class="bg_plat vege">
-            <div class="choix_plat">
-                <a href="https://menu-vegetarien.com/pizza-legumes-ete/#" class="choix_plat"><img id="plat" src="../img/Plat/Pizza_Vege.png" alt="afficher pizza"></a>
-            </div>
-            <div class="choix_plat">
-                <h3>Pizza aux légumes d'été</h3>
-                <p>Calories : 466kcal</p>
-            </div>
-            <div class="choix_plat">
-                <button class="bouton_green">Ajouter au calendrier</button>
+        <div class="card-container vegan">
+            <div class="card">
+                <div class="card-front choix_plat">
+                    <a href="https://menu-vegetarien.com/salade-lupins-haricots-verts/" class="choix_plat"><img src="../img/Plat/Salade_Vegan.png" alt="Salade de lupins et haricots verts"></a>
+                    <h2>Salade de lupins et haricots verts</h2>
+                    <p>Calories : 185kcal</p>
+                </div>
+                <div class="card-back">
+                    <h2>Apports</h2>
+                    <p>Glucides : 22 g</p>
+                    <p>Protéines : 8 g</p>
+                    <p>Lipides : 8 g</p>
+                    <button class="bouton_green">Ajouter au calendrier</button>
+                </div>
             </div>
         </div>
-        <div class="bg_plat carnivore">
-            <div class="choix_plat">
-                <a href="https://www.cuisineaz.com/recettes/escalopes-de-dinde-minceur-aux-champignons-60633.aspx" class="choix_plat"><img id="plat" src="../img/Plat/Escalope_Viande.png" alt="afficher steak"></a>
+        <div class="card-container vege">
+            <div class="card">
+                <div class="card-front choix_plat">
+                    <a href="https://menu-vegetarien.com/pizza-legumes-ete/#" class="choix_plat"><img src="../img/Plat/Pizza_Vege.png" alt="Pizza aux légumes d'été"></a>
+                    <h2>Pizza aux légumes d'été</h2>
+                    <p>Calories : 466kcal</p>
+                </div>
+                <div class="card-back">
+                    <h2>Apports</h2>
+                    <p>Glucides : 52 g</p>
+                    <p>Protéines : 16 g</p>
+                    <p>Lipides : 22 g</p>
+                    <button class="bouton_green">Ajouter au calendrier</button>
+                </div>
             </div>
-            <div class="choix_plat">
-                <h3>Steak</h3>
-                <p>Calories : 263kcal</p>
-            </div>
-            <div class="choix_plat">
-                <button class="bouton_green">Ajouter au calendrier</button>
+        </div>
+        <div class="card-container carnivore">
+            <div class="card">
+                <div class="card-front choix_plat">
+                    <a href="https://www.cuisineaz.com/recettes/escalopes-de-dinde-minceur-aux-champignons-60633.aspx" class="choix_plat"><img src="../img/Plat/Escalope_Viande.png" alt="Escapopes de dindes minceur aux champignons"></a>
+                    <h2>Escapopes de dindes minceur aux champignons</h2>
+                    <p>Calories : 263kcal</p>
+                </div>
+                <div class="card-back">
+                    <h2>Apports</h2>
+                    <p>Glucides : 3 g</p>
+                    <p>Protéines : 26 g</p>
+                    <p>Lipides : 15 g</p>
+                    <button class="bouton_green">Ajouter au calendrier</button>
+                </div>
             </div>
         </div>
     </section>
