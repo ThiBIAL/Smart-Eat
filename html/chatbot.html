@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/JavaScript" src="../js/chatbot.js"></script>
+    <title>Smart'Eat</title>
+</head>
+<body>
+    <header>
+        <a href="./accueil.html"><img src="../img/Smart_eat_1.png" id="logo" height="50" width="50"></a>
+        <h1>Smart'Eat</h1>
+    </header>
+    <section id="tools">
+        <div class="tool_item">
+            <img src="../img/icons/couverts.png" alt="Journal">
+            <label>Journal</label>
+        </div>
+        <div class="tool_item">
+            <a href="./jeux.html"><img src="../img/icons/quiz.png" alt="Quiz"></a>
+            <label>Quiz</label>
+        </div>
+        <div class="tool_item">
+            <a href="./calendrier.html"><img src="../img/icons/calendar.png" alt="Calendrier"></a>
+            <label>Calendrier</label>
+        </div>
+        <div class="tool_item">
+            <img src="../img/icons/plus.png" alt="Plus">
+            <label>Plus</label>
+        </div>
+    </section>
+    <section>
+        <h1>
+            Smart'Bot
+        </h1>
+        <div class="chat-container">
+            <div id="chat-box">
+                <!-- Les messages du chat s'afficheront ici -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Posez votre question...">
+                <button id="send" type="submit" class="bouton_green" onclick="fetchJSON('../json/intents.json')">Envoyer</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        ©️2024 Thibault BIAL & Adrien ASSOUAD.<br><br>
+        Tous droits réservés.<br><br>
+    </footer>
+</body>
+</html>

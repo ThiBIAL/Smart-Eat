@@ -1,0 +1,70 @@
+{
+    "intents": [
+      {
+        "tag": "greet",
+        "patterns": ["Bonjour", "Salut", "Coucou"],
+        "responses": ["Bonjour ! Comment puis-je vous aider ?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Au revoir", "À bientôt", "À la prochaine"],
+        "responses": ["À bientôt ! N'hésitez pas si vous avez d'autres questions."]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Merci", "Merci beaucoup", "Merci pour votre aide"],
+        "responses": ["De rien ! C'est un plaisir de vous aider."]
+      },
+      {
+        "tag": "balanced_diet",
+        "patterns": ["Qu'est-ce qu'un régime équilibré ?", "Comment avoir une alimentation équilibrée ?", "Conseils pour une alimentation équilibrée"],
+        "responses": ["Un régime équilibré comprend une variété d'aliments dans les bonnes proportions, notamment des fruits et légumes, des protéines, des glucides, des graisses saines, et suffisamment d'eau. Il est important de limiter la consommation d'aliments transformés, de sucre et de sel."]
+      },
+      {
+        "tag": "caloric_intake",
+        "patterns": ["Combien de calories dois-je consommer par jour ?", "Apport calorique quotidien recommandé", "Calcul des besoins caloriques"],
+        "responses": ["L'apport calorique quotidien varie en fonction de l'âge, du sexe, du poids, de la taille et du niveau d'activité physique. En moyenne, un homme adulte a besoin de 2500 calories par jour et une femme adulte de 2000 calories par jour. Pour des conseils personnalisés, il est préférable de consulter un professionnel de la santé."]
+      },
+      {
+        "tag": "weight_loss",
+        "patterns": ["Comment perdre du poids ?", "Conseils pour perdre du poids", "Régime pour perdre du poids"],
+        "responses": ["Pour perdre du poids, il est important de créer un déficit calorique en consommant moins de calories que ce que vous brûlez. Adoptez une alimentation équilibrée riche en fruits, légumes, protéines maigres et grains entiers, et faites régulièrement de l'exercice. Consultez un professionnel de la santé pour un plan personnalisé."]
+      },
+      {
+        "tag": "protein_sources",
+        "patterns": ["Quelles sont les bonnes sources de protéines ?", "Aliments riches en protéines", "Sources de protéines végétales"],
+        "responses": ["Les bonnes sources de protéines incluent la viande, le poisson, les œufs, les produits laitiers, les légumineuses, les noix et les graines. Pour les protéines végétales, optez pour les lentilles, les pois chiches, le tofu, le quinoa et les graines de chia."]
+      },
+      {
+        "tag": "vitamins_minerals",
+        "patterns": ["Quels sont les aliments riches en vitamines et minéraux ?", "Sources de vitamines et minéraux", "Comment obtenir suffisamment de vitamines ?"],
+        "responses": ["Les fruits et légumes sont les meilleures sources de vitamines et de minéraux. Par exemple, les agrumes sont riches en vitamine C, les légumes verts à feuilles sont riches en fer et en calcium, et les carottes sont riches en vitamine A. Variez votre alimentation pour obtenir une large gamme de nutriments."]
+      },
+      {
+        "tag": "hydration",
+        "patterns": ["Quelle quantité d'eau dois-je boire chaque jour ?", "Hydratation quotidienne recommandée", "Combien d'eau est nécessaire par jour ?"],
+        "responses": ["Il est généralement recommandé de boire environ 2 litres (8 verres) d'eau par jour. Cependant, les besoins peuvent varier en fonction de l'âge, du sexe, du niveau d'activité et du climat. Écoutez votre corps et buvez lorsque vous avez soif."]
+      },
+      {
+        "tag": "vegetarian_diet",
+        "patterns": ["Qu'est-ce qu'un régime végétarien ?", "Avantages du régime végétarien", "Comment suivre un régime végétarien ?"],
+        "responses": ["Un régime végétarien exclut la viande et le poisson, mais inclut les légumes, les fruits, les grains, les noix, les graines et les produits laitiers. Il peut offrir des avantages pour la santé, tels qu'une réduction du risque de maladies cardiaques et une meilleure gestion du poids. Assurez-vous de consommer une variété d'aliments pour obtenir tous les nutriments nécessaires."]
+      },
+      {
+        "tag": "vegan_diet",
+        "patterns": ["Qu'est-ce qu'un régime végan ?", "Avantages du régime végan", "Comment suivre un régime végan ?"],
+        "responses": ["Un régime végan exclut tous les produits d'origine animale, y compris la viande, le poisson, les produits laitiers, les œufs et le miel. Il se compose de fruits, légumes, grains, légumineuses, noix et graines. Ce régime peut offrir des avantages pour la santé et l'environnement. Assurez-vous de planifier vos repas pour obtenir tous les nutriments nécessaires, comme les protéines, le fer, le calcium et la vitamine B12."]
+      },
+      {
+        "tag": "food_allergies",
+        "patterns": ["Quelles sont les allergies alimentaires courantes ?", "Comment gérer une allergie alimentaire ?", "Symptômes d'une allergie alimentaire"],
+        "responses": ["Les allergies alimentaires courantes incluent les allergies aux arachides, aux noix, au lait, aux œufs, au soja, au blé, au poisson et aux crustacés. Pour gérer une allergie alimentaire, évitez les aliments déclencheurs, lisez attentivement les étiquettes des aliments et portez un bracelet d'alerte médicale. En cas de réaction allergique sévère, utilisez un auto-injecteur d'épinéphrine et consultez immédiatement un médecin."]
+      },
+      {
+        "tag": "fallback",
+        "patterns": [],
+        "responses": ["Je suis désolé, je ne suis pas sûr de comprendre. Pouvez-vous reformuler votre question ?"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/JavaScript" src="../js/quiz.js"></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <a href="./accueil.html"><img src = "../img/Smart_eat_1.png" id="logo" height="50" width="50"></a>
+        <h1>Quiz</h1>
+    </header>
+    <section id="tools">
+        <div class="tool_item">
+            <a href="./chatbot.html"><img src="../img/icons/dashboard.png" alt="Dashboard"></a>
+            <label>Chatbot</label>
+        </div>
+        <div class="tool_item">
+            <img src="../img/icons/couverts.png" alt="Journal">
+            <label>Journal</label>
+        </div>
+        <div class="tool_item">
+            <a href="./calendrier.html"><img src="../img/icons/calendar.png" alt="Calendrier"></a>
+            <label>Calendrier</label>
+        </div>
+        <div class="tool_item">
+            <img src="../img/icons/plus.png" alt="Plus">
+            <label>Plus</label>
+        </div>
+    </section>
+    <form>
+        <fieldset class="encadre_question">
+            <h3>Question 1</h3>
+            <h4>Les glucides sont-ils mauvais pour la santé ?</h4>
+            <div class="container_quiz">
+                <input type="button" class="vrai" id="q1vrai" name="q1" value="Vrai">
+                <input type="button" class="faux" id="q1faux" name="q1" value="Faux">
+            </div>
+        </fieldset>
+        <fieldset class="encadre_question">
+            <h3>Question 2</h3>
+            <h4>Les protéines sont-elles essentielles uniquement pour les personnes qui font de la musculation ?</h4>
+            <div class="container_quiz">
+                <input type="button" class="vrai" id="q2vrai" name="q2" value="Vrai">
+                <input type="button" class="faux" id="q2faux" name="q2" value="Faux">
+            </div>
+        </fieldset>
+        <fieldset class="encadre_question">
+            <h3>Question 3</h3>
+            <h4>Boire beaucoup d'eau peut-il aider à perdre du poids ?</h4>
+            <div class="container_quiz">
+                <input type="button" class="vrai" id="q3vrai" name="q3" value="Vrai">
+                <input type="button" class="faux" id="q3faux" name="q3" value="Faux">
+            </div>
+        </fieldset>
+        <div id="container_verifier">
+            <button type="submit" class="bouton_green" id="verifier">Vérifier</button>
+        </div>
+    </form>
+    <footer>
+        ©️2024 Thibault BIAL & Adrien ASSOUAD.<br><br>
+        Tous droits réservés.<br><br>
+    </footer>
+</body>
+</html>

@@ -506,9 +506,14 @@ footer {
    
 }
 
+#platimg>a:hover > #plattext {
+    transform: rotateY(-180deg);
+   
+}
 
 
-#platimg {
+
+#platimg>a {
     backface-visibility: hidden;
     transition: transform 1s;
     transform-style: preserve-3d;

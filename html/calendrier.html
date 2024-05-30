@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/calendar.js"></script>   
+    <title>Calendrier</title>
+</head>
+<body>
+    <header>
+        <a href="./accueil.html"><img src = "../img/Smart_eat_1.png" id="logo" height="50" width="50"></a>
+        <h1>Smart'Eat</h1>
+    </header>
+    <section id="tools">
+        <div class="tool_item">
+            <a href="./chatbot.html"><img src="../img/icons/dashboard.png" alt="Dashboard"></a>
+            <label>Chatbot</label>
+        </div>
+        <div class="tool_item">
+            <img src="../img/icons/couverts.png" alt="Journal">
+            <label>Journal</label>
+        </div>
+        <div class="tool_item">
+            <a href="./jeux.html"><img src="../img/icons/quiz.png" alt="Quiz"></a>
+            <label>Quiz</label>
+        </div>
+        <div class="tool_item">
+            <img src="../img/icons/plus.png" alt="Plus">
+            <label>Plus</label>
+        </div>
+    </section>
+    <br>
+    <div class="choix_plat">
+        <button class="bouton_green" id="vegan" onclick="afficherVegan()">Vegan</button>
+        <button class="bouton_green" id="vegetarien" onclick="afficherVege()">Végé</button>
+        <button class="bouton_green" id="carnivore" onclick="afficherCarnivore()">Carnivore</button>
+    </div>
+    <br>
+    <div class="choix_plat">
+        <button class="bouton_green" onclick="afficherTous()">Tous</button>
+    </div>
+    <div class="choix_plat">
+        <h2>Liste des repas</h2>
+    </div>
+    <section id="plat_container">
+        <div class="bg_plat vegan">
+            <div class="choix_plat" id = "platimg">
+                <a href="https://menu-vegetarien.com/salade-lupins-haricots-verts/" class="choix_plat"><img id="plat" src="../img/Plat/Salade_Vegan.png" alt="Salade de lupins et haricots verts"></a>
+            </div>
+            <div class="choix_plat" id = "plattext">
+                <h3>Salade de lupins et haricots verts</h3>
+                <p>Calories : 185kcal</p>
+            </div>
+            <div class="choix_plat">
+                <button class="bouton_green">Ajouter au calendrier</button>
+            </div>
+        </div>
+        <div class="bg_plat vege">
+            <div class="choix_plat">
+                <a href="https://menu-vegetarien.com/pizza-legumes-ete/#" class="choix_plat"><img id="plat" src="../img/Plat/Pizza_Vege.png" alt="afficher pizza"></a>
+            </div>
+            <div class="choix_plat">
+                <h3>Pizza aux légumes d'été</h3>
+                <p>Calories : 466kcal</p>
+            </div>
+            <div class="choix_plat">
+                <button class="bouton_green">Ajouter au calendrier</button>
+            </div>
+        </div>
+        <div class="bg_plat carnivore">
+            <div class="choix_plat">
+                <a href="https://www.cuisineaz.com/recettes/escalopes-de-dinde-minceur-aux-champignons-60633.aspx" class="choix_plat"><img id="plat" src="../img/Plat/Escalope_Viande.png" alt="afficher steak"></a>
+            </div>
+            <div class="choix_plat">
+                <h3>Steak</h3>
+                <p>Calories : 263kcal</p>
+            </div>
+            <div class="choix_plat">
+                <button class="bouton_green">Ajouter au calendrier</button>
+            </div>
+        </div>
+    </section>
+    <iframe id="open-web-calendar" 
+    style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat; margin-left: 10%; margin-top: 5%;"
+    src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?language=fr"
+    sandbox="allow-scripts allow-same-origin allow-top-navigation"
+    allowTransparency="true" scrolling="no" 
+    frameborder="0" height="600px" width="80%"></iframe>
+    <footer>
+        ©️2024 Thibault BIAL & Adrien ASSOUAD.<br><br>
+        Tous droits réservés.<br><br>
+    </footer>
+</body>
+</html>
