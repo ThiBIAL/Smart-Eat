@@ -3,66 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/inscription-connexion.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/JavaScript" src="../js/login_signup.js"></script>
     <title>Inscription</title>
 </head>
 <body>
-    <header>
-        <a href="./login.html"><img src = "../img/icons/retour.png" id="logo" height="50" width="50"></a>
-        <h1>Smart'Eat</h1>
-    </header>
-    <h2>Formulaire d'inscription</h2>
-    <form action="" method="post" id="inscription">
-        <fieldset>
-            <legend>Informations personnelles</legend>
-            <div>
-                <label for="nom">Nom :</label>
-                <input class="inscription_input" type="text" id="nom" name="nom" required>
+    <div class="window_container">
+        <header>
+            <a href="./login.html"><img src = "../img/icons/retour.png" id="logo" height="50" width="50"></a>
+            <h1>Smart'Eat</h1>
+        </header>
+        <main>
+            <h2>Formulaire d'inscription</h2>
+            <div class="container_inscription">
+                <form action="" method="post" id="inscription" onsubmit="return displayAlert()">
+                    <fieldset>
+                        <legend>Informations personnelles</legend>
+                        <div>
+                            <label for="nom">Nom :</label>
+                            <input class="inscription_input" type="text" id="nom" name="nom" required>
+                        </div>
+                        <div>
+                            <label for="prenom">Prénom :</label>
+                            <input class="inscription_input" type="text" id="prenom" name="prenom" required>
+                        </div>
+                        <div>
+                            <label for="email">Email :</label>
+                            <input class="inscription_input" type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="password">Mot de passe :</label>
+                            <input class="inscription_input" type="password" id="password" name="password" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informations physiques</legend>
+                        <div>
+                            <label for="poids">Poids (en kg) :</label>
+                            <input class="inscription_input" type="number" id="poids" name="poids" min="1" step="any" required>
+                        </div>
+                        <div>
+                            <label for="age">Âge :</label>
+                            <input class="inscription_input" type="number" id="age" name="age" min="1" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Objectif physique</legend>
+                        <div>
+                            <input type="radio" id="option1" name="Objectif" value="perdre du poids">
+                            <label for="option1">Perdre du poids</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="option2" name="Objectif" value="maintenir votre poids">
+                            <label for="option2">Conserver son poids</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="option3" name="Objectif" value="prendre du poids">
+                            <label for="option3">Prendre du poids</label>
+                        </div>
+                    </fieldset>
+                    <a href="./login.html"><button type="submit" class="bouton_green" id="bouton_inscription">Soumettre</button></a>
+                </form>
             </div>
-            <div>
-                <label for="prenom">Prénom :</label>
-                <input class="inscription_input" type="text" id="prenom" name="prenom" required>
-            </div>
-            <div>
-                <label for="email">Email :</label>
-                <input class="inscription_input" type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="password">Mot de passe :</label>
-                <input class="inscription_input" type="password" id="password" name="password" required>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Informations physiques</legend>
-            <div>
-                <label for="poids">Poids (en kg) :</label>
-                <input class="inscription_input" type="number" id="poids" name="poids" min="1" step="any" required>
-            </div>
-            <div>
-                <label for="age">Âge :</label>
-                <input class="inscription_input" type="number" id="age" name="age" min="1" required>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend>Objectif physique</legend>
-            <div>
-                <input type="radio" id="option1" name="Objectif" value="Perdre">
-                <label for="option1">Perdre du poids</label>
-            </div>
-            <div>
-                <input type="radio" id="option2" name="Objectif" value="Maintenir">
-                <label for="option2">Conserver son poids</label>
-            </div>
-            <div>
-                <input type="radio" id="option3" name="Objectif" value="Prendre">
-                <label for="option3">Prendre du poids</label>
-            </div>
-        </fieldset>
-        <button type="submit" class="bouton_green">Soumettre</button>
-    </form>
-    <footer>
-        ©️2024 Thibault BIAL & Adrien ASSOUAD.<br><br>
-        Tous droits réservés.<br><br>
-    </footer>
+        </main>
+        <footer>
+            ©️2024 Thibault BIAL & Adrien ASSOUAD.<br><br>
+            Tous droits réservés.<br><br>
+        </footer>
+    </div>
 </body>
 </html>

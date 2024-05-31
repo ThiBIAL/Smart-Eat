@@ -1,0 +1,177 @@
+
+#Macros {
+    margin-left: 15%;
+}
+
+#id_nutriments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.nutriments {
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+}
+
+#blue {
+    color: #096560;
+    font-weight: bold;
+}
+
+#purple {
+    color: #4a0065;
+    font-weight: bold;
+}
+
+#orange {
+    color: #b76000;
+    font-weight: bold;
+}
+
+#nouveauGlucides {
+    width: 33%;
+    text-align: center;
+}
+
+#nouveauLipides {
+    width: 33%;
+    text-align: center;
+}
+
+#nouveauProteines {
+    width: 33%;
+    text-align: center;
+}
+
+
+#modificationForm {
+    display: none;
+}
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+  
+.chart-wrapper {
+    position: relative;
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding-top: 20%;
+    box-sizing: border-box;
+}
+  
+.chart-wrapper canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+  
+@media (min-width: 600px) {
+    .chart-wrapper {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+}
+}
+  
+@media (min-width: 900px) {
+    .chart-wrapper {
+      flex: 1 1 calc(33.33% - 20px);
+      max-width: calc(33.33% - 20px);
+}
+}
+
+#modif button {
+    padding: 10px 20px;
+    margin-right: 10%;
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0a7f79;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#modif button:hover {
+    background-color: #096560;
+  }
+
+#sport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sport {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+#cases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cases {
+    width: 33%;
+    padding: 0px;
+    text-align: center;
+}
+
+#soumettre {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0a7f79;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 15%;
+    display: none;
+    margin : auto;
+}
+
+#soumettre:hover {
+    background-color: #096560;
+}
+
+#modif {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#modif h2 {
+    margin: 0;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+
+.deco_container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#bouton_deco {
+    margin: 25px;
+}

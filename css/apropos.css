@@ -1,0 +1,42 @@
+.text {
+    background-color: #E9F4F9;
+    border-radius: 5px;
+    border: 1px;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.text2 {
+    background-color: #c7e1ec;
+    border-radius: 5px;
+    border: 1px;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.text3 {
+    background-color: #E9F4F9;
+    border-radius: 5px;
+    border: 1px;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+li {
+    margin: 8px;
+    text-align: left;
+}
+
+#logo_apropos {
+    border-radius: 5px;
+}

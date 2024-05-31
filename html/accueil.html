@@ -3,98 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/accueil.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Smart'Eat</title>
     <link rel="icon" type="image/png" href="../img/Smart_eat_1.png">
 </head>
 <body>
-    <header>
-        <img src="../img/Smart_eat_1.png" id="logo" height="50" width="50">
-        <h1>Smart'Eat</h1>
-        <img src="../img/icons/loupe.png" id="recherche" height="50" width="50">
-    </header>
-    <section id="tools">
-        <div class="tool_item">
-            <a href="./chatbot.html"><img src="../img/icons/dashboard.png" alt="Dashboard"></a>
-            <label>Chatbot</label>
-        </div>
-        <div class="tool_item">
-            <img src="../img/icons/couverts.png" alt="Journal">
-            <label>Journal</label>
-        </div>
-        <div class="tool_item">
-            <a href="./jeux.html"><img src="../img/icons/quiz.png" alt="Quiz"></a>
-            <label>Quiz</label>
-        </div>
-        <div class="tool_item">
-            <a href="./calendrier.html"><img src="../img/icons/calendar.png" alt="Calendrier"></a>
-            <label>Calendrier</label>
-        </div>
-        <div class="tool_item">
-            <img src="../img/icons/plus.png" alt="Plus">
-            <label>Plus</label>
-        </div>
-    </section>
-    <section id="modif">
-        <h2>Aujourd'hui</h2>
-        <button id="modifierButton" onclick="afficherFormulaire()">Modifier</button>
-    </section>
-    <section>
-        <h3 id="Macros">Macros nutriments</h3>
-        <div id="id_nutriments">
-            <div class="nutriments">
-                <label id="blue">Glucides</label>
-                <p id="glucides">0 g</p>
-            </div>
-            <div class="nutriments">
-                <label id="purple">Lipides</label>
-                <p id="lipides">0 g</p>
-            </div>
-            <div class="nutriments">
-                <label id="orange">Protéines</label>
-                <p id="proteines">0 g</p>
-            </div>
-        </div>
-        <form id="modificationForm">
-            <div id="cases">
-                <div class="cases">
-                    <input type="number" class="input_macro" id="nouveauGlucides" name="nouveauGlucides" min="0" step="1" placeholder="Glucides"><br><br>
+    <div class="window_container">
+        <header>
+            <img src="../img/Smart_eat_1.png" id="logo" height="50" width="50">
+            <h1>Smart'Eat</h1>
+            <img src="../img/icons/loupe.png" id="recherche" height="50" width="50">
+        </header>
+        <main>
+            <section id="tools">
+                <div class="tool_item">
+                    <a href="./chatbot.html"><img src="../img/icons/dashboard.png" alt="Dashboard"></a>
+                    <label>Chatbot</label>
                 </div>
-                <div class="cases">
-                    <input type="number" class="input_macro" id="nouveauLipides" name="nouveauLipides" min="0" step="1" placeholder="Lipides"><br><br>
+                <div class="tool_item">
+                    <img src="../img/icons/couverts.png" alt="Journal">
+                    <label>Journal</label>
                 </div>
-                <div class="cases">
-                    <input type="number" class="input_macro" id="nouveauProteines" name="nouveauProteines" min="0" step="1" placeholder="Protéines"><br><br>
+                <div class="tool_item">
+                    <a href="./jeux.html"><img src="../img/icons/quiz.png" alt="Quiz"></a>
+                    <label>Quiz</label>
+                </div>
+                <div class="tool_item">
+                    <a href="./calendrier.html"><img src="../img/icons/calendar.png" alt="Calendrier"></a>
+                    <label>Calendrier</label>
+                </div>
+                <div class="tool_item">
+                    <a href="apropos.html"><img src="../img/icons/plus.png" alt="A propos"></a>
+                    <label>A propos</label>
+                </div>
+            </section>
+            <section id="modif">
+                <h2>Aujourd'hui</h2>
+                <button id="modifierButton" onclick="afficherFormulaire()">Modifier</button>
+            </section>
+            <section>
+                <h3 id="Macros">Macros nutriments</h3>
+                <div id="id_nutriments">
+                    <div class="nutriments">
+                        <label id="blue">Glucides</label>
+                        <p id="glucides">0 g</p>
+                    </div>
+                    <div class="nutriments">
+                        <label id="purple">Lipides</label>
+                        <p id="lipides">0 g</p>
+                    </div>
+                    <div class="nutriments">
+                        <label id="orange">Protéines</label>
+                        <p id="proteines">0 g</p>
+                    </div>
+                </div>
+                <form id="modificationForm">
+                    <div id="cases">
+                        <div class="cases">
+                            <input type="number" class="input_macro" id="nouveauGlucides" name="nouveauGlucides" min="0" step="1" placeholder="Glucides"><br><br>
+                        </div>
+                        <div class="cases">
+                            <input type="number" class="input_macro" id="nouveauLipides" name="nouveauLipides" min="0" step="1" placeholder="Lipides"><br><br>
+                        </div>
+                        <div class="cases">
+                            <input type="number" class="input_macro" id="nouveauProteines" name="nouveauProteines" min="0" step="1" placeholder="Protéines"><br><br>
+                        </div>
+                    </div>
+                    <button type="button" id="soumettre" onclick="modifierNutriments()">Soumettre</button>
+                </form>
+            </section>
+            <div class="chart-container">
+                <div class="chart-wrapper">
+                <canvas id="glucidesChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                <canvas id="lipidesChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                <canvas id="proteinesChart"></canvas>
                 </div>
             </div>
-            <button type="button" id="soumettre" onclick="modifierNutriments()">Soumettre</button>
-        </form>
-    </section>
-    <div class="chart-container">
-        <div class="chart-wrapper">
-          <canvas id="glucidesChart"></canvas>
-        </div>
-        <div class="chart-wrapper">
-          <canvas id="lipidesChart"></canvas>
-        </div>
-        <div class="chart-wrapper">
-          <canvas id="proteinesChart"></canvas>
-        </div>
-      </div>
-    <section id="sport">
-        <div class="sport">
-            <label>Pas</label>
-        </div>
-        <div class="sport">
-            <label>Exercice</label>
-        </div>
-    </section>
-    <footer>
-        ©️2024 Thibault BIAL & Adrien ASSOUAD.<br><br>
-        Tous droits réservés.<br><br>
-    </footer>
-    <a href="./login.html">deconnexion</a>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>     
-    <script src="../js/script.js"></script>   
+            <section id="sport">
+                <div class="sport">
+                    <label>Pas</label>
+                </div>
+                <div class="sport">
+                    <label>Exercice</label>
+                </div>
+            </section>
+            <div class="deco_container">
+                <a href="./login.html"><button class="bouton_green" id="bouton_deco">Deconnexion</button></a>
+            </div>
+        </main>
+        <footer>
+            ©️2024 Thibault BIAL & Adrien ASSOUAD.<br><br>
+            Tous droits réservés.<br><br>
+        </footer>   
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>     
+        <script src="../js/script.js"></script> 
+    </div>  
 </body>
 </html>
