@@ -1,3 +1,5 @@
+
+
 body {
     font-family: URW Gothic L, sans-serif;
     text-align: justify;
@@ -93,4 +95,16 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+#non_dispo {
+    background-color: #c7e1ec;
+    border-radius: 5px;
+    border: 1px;
+    padding: 10px;
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 8%;
 }

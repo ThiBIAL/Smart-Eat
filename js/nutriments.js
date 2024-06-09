@@ -16,7 +16,7 @@ var glucidesChart = new Chart(ctxGlucides, {
     data: {
         labels: ['Glucides', 'Restant'],
         datasets: [{
-            data: [0, 300],
+            data: [0, 220],
             backgroundColor: ['#0a7f79', '#dddddd'],
         }]
     },
@@ -50,7 +50,7 @@ var lipidesChart = new Chart(ctxLipides, {
     data: {
         labels: ['Lipides', 'Restant'],
         datasets: [{
-            data: [0, 100],
+            data: [0, 60],
             backgroundColor: ['#7f0a7f', '#dddddd'],
         }]
     },
@@ -84,7 +84,7 @@ var proteinesChart = new Chart(ctxProteines, {
     data: {
         labels: ['Protéines', 'Restant'],
         datasets: [{
-            data: [0, 150],
+            data: [0, 66],
             backgroundColor: ['#7f7f0a', '#dddddd'],
         }]
     },
@@ -134,17 +134,17 @@ function modifierNutriments() {
     if (!isNaN(nouveauGlucides)) {
         glucidesActuels += nouveauGlucides;
         document.getElementById('glucides').innerText = glucidesActuels + ' g';
-        updateChart(glucidesChart, glucidesActuels, 300);
+        updateChart(glucidesChart, glucidesActuels, 220);
     }
     if (!isNaN(nouveauLipides)) {
         lipidesActuels += nouveauLipides;
         document.getElementById('lipides').innerText = lipidesActuels + ' g';
-        updateChart(lipidesChart, lipidesActuels, 100);
+        updateChart(lipidesChart, lipidesActuels, 60);
     }
     if (!isNaN(nouveauProteines)) {
         proteinesActuels += nouveauProteines;
         document.getElementById('proteines').innerText = proteinesActuels + ' g';
-        updateChart(proteinesChart, proteinesActuels, 150);
+        updateChart(proteinesChart, proteinesActuels, 66);
     }
     // Cacher le formulaire après la soumission et réafficher le bouton "Modifier"
     document.getElementById('modificationForm').style.display = 'none';

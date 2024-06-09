@@ -1,3 +1,14 @@
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Ajout du gestionnaire d'événement pour la touche "Entrée"
+    document.getElementById('user-input').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Empêche le comportement par défaut de la touche "Entrée"
+            document.getElementById('send').click(); // Simule un clic sur le bouton "Envoyer"
+        }
+    });
+});
+
 // Déclaration de la classe ChatHistory
 class ChatHistory {
     constructor() {
@@ -143,8 +154,6 @@ function sendMessage(intents) {
     // e. Effacer le champ de saisie
     document.getElementById('user-input').value = '';
 }
-
-
 
 
 

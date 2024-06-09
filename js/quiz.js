@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function selectAnswer(questionId, answer) {
-    // Store the selected answer
+    // Stocke la réponse sélectionnée
     userAnswers[questionId] = answer;
 
-    // Update button styles to show selection
+    // Met à jour le style du bouton pour la sélection
     const buttons = document.querySelectorAll(`#${questionId}vrai, #${questionId}faux`);
     buttons.forEach(button => button.classList.remove('selected'));
     document.getElementById(`${questionId}${answer.toLowerCase()}`).classList.add('selected');

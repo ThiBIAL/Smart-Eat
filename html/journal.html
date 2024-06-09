@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/chatbot.css">
+    <link rel="stylesheet" href="../css/accueil.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <script src="../js/chatbot.js"></script>
-    <title>Smart'Eat</title>
+    <title>Journal</title>
     <link rel="icon" type="image/png" href="../img/Smart_eat_1.png">
 </head>
 <body>
     <div class="window_container">
         <header>
             <a href="./accueil.html"><img src="../img/Smart_eat_1.png" id="logo" height="50" width="50" alt="Logo"></a>
-            <h1>Smart'Eat</h1>
+            <h1>Journal</h1>
         </header>
         <main>
             <div id="tools">
                 <div class="tool_item">
-                    <a href="./journal.html"><img src="../img/icons/couverts.png" alt="Journal"></a>
-                    <label>Journal</label>
+                    <a href="./chatbot.html"><img src="../img/icons/dashboard.png" alt="Dashboard"></a>
+                    <label>Chatbot</label>
                 </div>
                 <div class="tool_item">
                     <a href="./jeux.html"><img src="../img/icons/quiz.png" alt="Quiz"></a>
@@ -34,28 +33,16 @@
                     <label>A propos</label>
                 </div>
             </div>
-            <section>
-                <h2>
-                    Smart'Bot
-                </h2>
-                <div class="chat-container">
-                    <div class="content-container">
-                        <div id="chat-box">
-                            <!-- Les messages du chat s'afficheront ici -->
-                        </div>
-                        <p class="side-paragraph">Smart'Bot est un outil proposé par Smart'Eat<br>Avez-vous des questions sur la nutrition ?<br><br>Exemple :<br>- Combien de calories dois-je consommer par jour ?<br>- Quelles sont les bonnes sources de protéines ?</p>
-                    </div>
-                    <div class="input-container">
-                        <input type="text" id="user-input" placeholder="Posez votre question...">
-                        <button id="send" type="submit" class="bouton_green" onclick="fetchJSON('../json/intents.json')">Envoyer</button>
-                    </div>
-                </div>
-            </section>
+            <div id="non_dispo">
+                <p>Cette page n'est pas encore disponible, son but sera de d'afficher les informations sauvegardées sur les repas des utilisateurs à chaque fois que celui se connecte sur le site. Pour le moment, le site n'est pas dynamique. Ce n'est donc pas encore possible.</p>
+                <img src="../img/gif.gif" width="480" height="259" alt="gif">
+            </div>
+            
         </main>
         <footer>
             ©️2024 Thibault BIAL & Adrien ASSOUAD.<br><br>
             Tous droits réservés.<br><br>
-        </footer>
+        </footer>  
     </div>
 </body>
 </html>

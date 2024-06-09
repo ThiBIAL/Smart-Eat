@@ -3,6 +3,11 @@
     border: none;
     padding: 30px;
     margin: 15px;
+    margin-left: 16%;
+    margin-right: 16%;
+    width: 65%;
+    text-align: center;
+    justify-content: center;
 }
 
 .container_quiz {
