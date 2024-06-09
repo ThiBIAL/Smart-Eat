@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/chatbot.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <script type="text/JavaScript" src="../js/chatbot.js"></script>
+    <script src="../js/chatbot.js"></script>
     <title>Smart'Eat</title>
     <link rel="icon" type="image/png" href="../img/Smart_eat_1.png">
 </head>
 <body>
     <div class="window_container">
         <header>
-            <a href="./accueil.html"><img src="../img/Smart_eat_1.png" id="logo" height="50" width="50"></a>
+            <a href="./accueil.html"><img src="../img/Smart_eat_1.png" id="logo" height="50" width="50" alt="Logo"></a>
             <h1>Smart'Eat</h1>
         </header>
         <main>
-            <section id="tools">
+            <div id="tools">
                 <div class="tool_item">
                     <img src="../img/icons/couverts.png" alt="Journal">
                     <label>Journal</label>
@@ -33,14 +33,18 @@
                     <a href="apropos.html"><img src="../img/icons/plus.png" alt="A propos"></a>
                     <label>A propos</label>
                 </div>
-            </section>
+            </div>
             <section>
-                <h1>
+                <h2>
                     Smart'Bot
-                </h1>
+                </h2>
                 <div class="chat-container">
-                    <div id="chat-box">
-                        <!-- Les messages du chat s'afficheront ici -->
+                    <div class="content-container">
+                        <div id="chat-box">
+                            <!-- Les messages du chat s'afficheront ici -->
+                        </div>
+                        <p class="side-paragraph">Smart'Bot est un outil proposé par Smart'Eat<br>Avez-vous des questions sur la nutrition ?<br><br>Exemple :<br>- Combien de calories dois-je consommer par jour ?<br>- Quelles sont les bonnes sources de protéines ?</p>
+                    </div>
                     </div>
                     <div class="input-container">
                         <input type="text" id="user-input" placeholder="Posez votre question...">

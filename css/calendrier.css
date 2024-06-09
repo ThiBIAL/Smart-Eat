@@ -81,3 +81,14 @@
     font-size: 16px;
     color: #666;
 }
+
+#open-web-calendar {
+    margin-bottom: 5%;
+    background: url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+    height: 600px;
+    border: none;
+    overflow: hidden;
+}
